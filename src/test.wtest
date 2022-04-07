@@ -1,9 +1,13 @@
 import capos.*
 
 test "encontrar artefactos" {
-	
+	rolando.agarrar(espada)
+	assert.that(rolando.buscarArtefacto(espada))
+	rolando.agarrar(libro)
+	rolando.agarrar(collar)
+	assert.notThat(rolando.buscarArtefacto(collar))
 }
-
+/* 
 test "castillo" {
 	
 }
@@ -15,3 +19,4 @@ test "posesiones" {
 test "historia" {
 	
 }
+*/
